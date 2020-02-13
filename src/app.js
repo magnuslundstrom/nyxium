@@ -5,6 +5,7 @@ const express = require('express')
 const hbs = require('hbs')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 
 // Paths
@@ -38,7 +39,7 @@ app.get('', (req, res) => {
 })
 
 const server = http.createServer(app)
-server.listen(3000, () => console.log('server started!'))
+server.listen(port, () => console.log('server started!'))
 
 
 
