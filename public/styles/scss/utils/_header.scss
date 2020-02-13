@@ -1,0 +1,126 @@
+@import './variables';
+
+header {
+    
+    color: white;
+
+    .header-wrapper {
+
+        border-bottom: 1px solid $lightgray;
+        max-width: $mw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0px;
+    }
+
+    a {
+        color: white;
+        &:hover {
+            color: white;
+        }
+    }
+
+    nav {
+        a {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media(max-width:1340px) {
+    header {
+        .header-wrapper {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    header {
+        .header-wrapper {
+            nav {
+                position: fixed;
+                bottom: 0px;
+                background-color: $darkgray;
+                height: 100vh;
+                right: 0px;
+                width: 66%;
+                display: flex;
+                z-index: 1;
+                padding-left: $m50;
+                flex-direction: column;
+                transform: scale(0,1);
+                transform-origin: right;
+                transition: 300ms ease-in-out;
+                a {
+                    display: block;
+                    margin-top: $m15;
+                }
+                a:first-of-type {
+                    margin-top: 200px;
+                }
+            }
+
+            .displaynav {
+                transform: scale(1);
+                transition: 300ms ease-in-out;
+            }
+        }
+
+        .burger {
+            position: relative;
+            height: 25px;
+            width: 25px;
+            display: flex;
+            align-items: center;
+         z-index: 2;
+            cursor: pointer;
+
+        }
+    }
+
+    .bars {        
+        &::after {
+          top: 7.5px;
+          width:20px;
+        }
+        &::before {
+          top: 15px;
+          width: 15px;
+        }
+          &::after, &::before {
+              height: 2px;
+              right: 3px;
+              content: '';
+              position: absolute;
+              background-color: white;
+              transition: 300ms ease-in-out;
+          }
+      }
+
+      .cross {        
+        &::after {
+          top: 7.5px;
+          width:20px;
+          transform: rotate(45deg);
+          
+        }
+        &::before {
+          top: 7.5px;
+          width: 20px;
+          transform: rotate(-45deg);
+          
+        }
+          &::after, &::before {
+              height: 2px;
+              right: 3px;
+              content: '';
+              position: absolute;
+              background-color: white;
+              transition: 300ms ease-in-out;
+          }
+      }
+}
+

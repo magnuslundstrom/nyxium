@@ -1,0 +1,58 @@
+
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/globals';
+@import './utils/header';
+@import './utils/components/cover';
+@import './utils/components/company-connect';
+@import './utils/components/twogrid';
+@import './utils/components/integrations';
+@import './utils/components/testimonials';
+@import './utils/footer';
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: $fontcolor;
+}
+
+a {
+    text-decoration: none;
+    color: $stdlinkcolor;
+
+    &:hover {
+        color: $darkmain;
+    }
+}
+
+body {
+    margin: 0px;
+    min-height: 100vh;
+}
+
+p,a {
+    font-size: 1.8rem;
+}
+
+.subheading {
+    font-size: $subheading;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 2.6rem;
+}
+
+@media(max-width: 900px) {
+    * {
+        font-size: 57.5%;
+    }
+}

@@ -1,0 +1,40 @@
+    .twoGrid {
+        justify-items: center;
+
+        grid-gap: $m50;
+      
+        .grid-2 {
+            align-items: center;
+            justify-items: center;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .twoGrid {
+            margin-top: -$m100;
+
+            .grid-2 {
+                padding-top: $m50;
+                margin-bottom: -$m50;
+                grid-template-areas:
+                'img1'
+                'text1'
+                'img2'
+                'text2';
+                .text1 {
+                    grid-area: text1;
+                    margin-bottom: $m50;
+                }
+                .img1 {
+                    grid-area: img1;
+                }
+                .text2 {
+                    grid-area: text2;
+                }
+                .img2 {
+                    grid-area: img2;
+                }
+            }
+        }
+    }
+

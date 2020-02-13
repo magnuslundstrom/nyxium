@@ -1,0 +1,33 @@
+.integrations {
+   text-align: center;
+   h2 {
+       margin-bottom: $m50;
+   }
+   .infolink {
+       display: inline-block;
+    margin-top: $m50;
+    font-weight: 700;
+
+    &:hover i {
+        color: $darkmain;
+    }
+
+    
+
+    i {
+        padding-left: $m10;
+        font-size: 1.5rem;
+        color: $stdlinkcolor;
+    }
+}
+}
+
+@media (max-width:800px) {
+    .integrations {
+        .grid-3 {
+        grid-template-columns: 1fr 1fr;
+        }
+    }
+
+}
+

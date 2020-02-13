@@ -1,0 +1,102 @@
+
+.btn {
+    background-color: $green;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: $m15;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $darkgreen;
+        color: white;
+    }
+}
+
+.headercircle {
+    width: 35px;
+    margin-left: $m30;
+}
+
+.circleheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+// Containers
+
+.container {
+    max-width: $mw;
+    margin: 0 auto;
+    margin-top: $m50;
+    margin-bottom: $m50;
+}
+
+.container-nmw {
+    margin-top: $m50;
+    margin-bottom: $m50;
+}
+
+.container-eb {
+    max-width: $mw;
+    margin: 0 auto;
+    margin-top: $m50;
+    margin-bottom: $m100;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $m50;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $m50;
+    img {
+        max-width: 100%;
+    }
+}
+
+.gray-bg {
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: $m150;
+    padding-top: $m150;
+    svg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1340px) {
+    .container, .container-eb {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media(max-width: 800px) {
+
+
+    .grid-3, .grid-2 {
+        grid-gap: $m30;
+        grid-template-columns: 1fr;
+    }
+}
