@@ -13,48 +13,6 @@ const testimonials = document.querySelector('.testimonials')
 const testimonialGrids = document.querySelectorAll('.testimonials_grid')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if (testimonials) {
     const options = {
         threshold: 0.3
@@ -95,7 +53,7 @@ const typescript = () => {
         .pauseFor(2000)
         .deleteChars(4)
         .typeString('indkøb')
-        .pauseFor(2500)
+        .pauseFor(2000)
         .deleteChars(6)
         .typeString('din virksomhed')
         .pauseFor(2000)
