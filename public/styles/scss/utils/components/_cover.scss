@@ -1,9 +1,5 @@
 
-.top {
-    background: url('/img/svgs/front-page-cover.svg');
-    background-size: cover;
-    background-position: bottom;
-}
+
 
 .cover {
     position: relative;
@@ -35,12 +31,16 @@
             img {
                 max-height: 300px;
             }
+            .e-height {
+                max-height: 400px;
+                margin-bottom: -50px;
+            }
         }
     }
 }
 
 
-@media(max-width: 1300px) {
+@media(max-width: 1340px) {
     .cover {
         .cover_content {
             padding-left: 5%;
@@ -75,6 +75,50 @@
 
 @media(max-width: 500px) {
     .top {
-        padding-bottom: 100px;
+        padding-bottom: 0px;
+    }
+}
+
+// Front page cover
+.fpCover {
+    background: url('/img/svgs/front-page-cover.svg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+// Integrationer main cover
+.intCover {
+    background: url('/img/svgs/integrations-red-cover.svg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+// Integrationer til dinero
+.intDineroCover {
+    background: url('/img/svgs/integrationer-dinero.svg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: white;
+        &:hover {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+    }
+    p {
+        display: inline-block;
+    }
+    i {
+        font-size: 1.3rem;
+        color: white;
+        margin-left: $m15;
+        margin-right: $m15;
+
     }
 }

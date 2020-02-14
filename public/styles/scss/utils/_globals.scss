@@ -52,6 +52,20 @@
     margin-bottom: $m100;
 }
 
+
+.container-et {
+    max-width: $mw;
+    margin: 0 auto;
+    margin-bottom: $m50;
+    padding-top: $m100;
+}
+.container-et-eb {
+    max-width: $mw;
+    margin: 0 auto;
+    margin-bottom: $m100;
+    margin-top: $m100;
+}
+
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -86,7 +100,7 @@
 }
 
 @media (max-width: 1340px) {
-    .container, .container-eb {
+    .container, .container-eb, .container-et, .container-et-eb  {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -98,5 +112,9 @@
     .grid-3, .grid-2 {
         grid-gap: $m30;
         grid-template-columns: 1fr;
+    }
+
+    .pb50 {
+        padding-bottom: 50px;
     }
 }
