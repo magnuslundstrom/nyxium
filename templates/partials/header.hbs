@@ -9,8 +9,15 @@
     <script src="https://kit.fontawesome.com/e061cad298.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/scss/styles.css">
 
+    <style>
+        .top {
+            background-image: url({{coverbg}});
+            background-size: cover;
+            background-position: bottom;
+        }
+    </style>
 </head>
-<div class="top {{coverBg}}">
+<div class="top">
     <header>
         <div class="header-wrapper">
             <div class="logo"><a href="/">Nyxium</a></div>
@@ -23,8 +30,9 @@
                 <a href="#">Priser</a>
                 <a href="#">Support</a>
             </nav>
-
         </div>
     </header>
+
+    {{> @partial-block}}
 
     <body>

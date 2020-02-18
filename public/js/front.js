@@ -43,22 +43,24 @@ const navToggle = () => {
 }
 burger.addEventListener('click', navToggle)
 
-// Frontpage Typeeffect
-const typescript = () => {
-    var typewriter = new Typewriter(typeEffect, {
-        loop: true
-    });
 
-    typewriter.typeString('salg')
-        .pauseFor(2000)
-        .deleteChars(4)
-        .typeString('indkøb')
-        .pauseFor(2000)
-        .deleteChars(6)
-        .typeString('din virksomhed')
-        .pauseFor(2000)
-        .start();
-}
 if (frontPageH1) {
+    // Frontpage Typeeffect
+    const typescript = () => {
+        var typewriter = new Typewriter(typeEffect, {
+            loop: true
+        });
+
+        typewriter.typeString('salg')
+            .pauseFor(2000)
+            .deleteChars(4)
+            .typeString('indkøb')
+            .pauseFor(2000)
+            .deleteChars(6)
+            .typeString('din virksomhed')
+            .pauseFor(2000)
+            .start();
+    }
+
     typescript()
 }

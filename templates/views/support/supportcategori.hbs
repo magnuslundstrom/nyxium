@@ -1,0 +1,53 @@
+{{!-- Holds the BG picture  --}}
+
+{{!-- holds the menu --}}
+{{>header}}
+
+
+<!-- COVER SECTION -->
+
+<section class="cover">
+    <div class="cover_content">
+
+        <h1>Integrationer</h1>
+        <p class="subheading">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem
+            Ipsum har været
+            standard
+            fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
+            bog
+            til
+            sammenligning af forskellige skrifttyper.</p>
+    </div>
+</section>
+</div>
+
+<div class="breadcrumbs_div container text-center">
+    <a href="/support">Support</a> <i class="fas fa-chevron-right"></i>
+    <p>Integrationer</p>
+</div>
+{{!-- support grid --}}
+
+
+
+<div class="container-eb support pb50 text-center">
+    <div class="header-icons">
+        <img src="/img/pngs/icons/rocket.png">
+        <img src="/img/pngs/icons/rocket.png">
+    </div>
+    <h2>Vi fandt følgende artikler</h2>
+    <section>
+
+
+
+
+        {{#if articles}}
+        {{>supportarticle}}
+        {{else}}
+        'James dean!'
+        {{/if}}
+    </section>
+
+
+
+</div>
+{{>footer}}

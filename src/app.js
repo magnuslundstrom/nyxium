@@ -4,8 +4,20 @@ const reload = require('reload')
 const express = require('express')
 const hbs = require('hbs')
 
+// Other routs
+const supportRouter = require('./routes/support')
+const integrationRouter = require('./routes/integrationer')
+
+// Json imports
+//
+
 const app = express()
+
+app.use(supportRouter)
+app.use(integrationRouter)
+
 const port = process.env.PORT || 3000
+
 
 
 // Paths
@@ -18,15 +30,10 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 app.set('view engine', 'hbs')
 app.set('views', viewPath)
 hbs.registerPartials(partialsPath)
+hbs.registerPartials(partialsPath + '/smallcomponents')
 
 // Static Dir
 app.use(express.static(publicDirPath))
-
-
-
-
-
-
 
 // Forside
 app.get('', (req, res) => {
@@ -37,23 +44,22 @@ app.get('', (req, res) => {
     })
 })
 
-// Integrationer hovedside
-app.get('/integrationer', (req, res) => {
-    res.render('integrationer', {
-        metaTitle: 'Integrationer',
-        metaDescription: 'Integrationer til Nyxium',
-        coverBg: 'intCover'
+// Priser
+app.get('/priser', (req, res) => {
+    res.render('priser', {
+        metaTitle: 'Priser',
+        metaDescription: 'Lær mere om vores ekstremt gode priser',
+        coverBg: 'prisCover'
     })
 })
 
-// Integrationer Dinero side
-app.get('/integrationer/dinero', (req, res) => {
-    res.render('integration-emne', {
-        metaTitle: 'Dinero integration',
-        metaDescription: 'Dinero integration',
-        coverBg: 'intDineroCover'
+// test
+app.get('/test', (req, res) => {
+    res.render('test', {
+
     })
 })
+
 
 const server = http.createServer(app)
 server.listen(port, () => console.log('server started!'))

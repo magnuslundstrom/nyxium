@@ -56,49 +56,42 @@
     </section>
 </div>
 
-{{!-- Gray SVG BG --}}
 
-<div class="gray-bg twoGrid">
-    <svg viewBox="0 0 1440 827" fill="none" xmlns="http://www.w3.org/2000/svg" loading="lazy">
-        <path id="Vector 7"
-            d="M811.954 50.3507C278.5 9.94658 497.28 100.46 -16 66.01L-3 827C209.721 798.921 692.498 749.723 921.832 777.566C1104 791.056 1069.5 714.98 1464 752.511V0.867553C1116.5 -8.83765 1024.21 66.427 811.954 50.3507Z"
-            fill="#F5F5F5" />
-    </svg>
 
-    {{!-- With 2 grid reverse text images --}}
+{{!-- With 2 grid reverse text images --}}
 
-    <section class="container grid-2">
-        <article class="twoGrid_grid img1">
-            <img src="/img/svgs/tasks.svg" loading="lazy">
-        </article>
-        <article class="twoGrid_grid text1">
-            <h2>Alle dine vigtigste data samlet et sted</h2>
-            <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
-                standard
-                fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
-                bog
-                til sammenligning af forskellige skrifttyper.</p>
-            <a href="#" class="btn">Opret bruger</a>
-        </article>
-        <article class="twoGrid_grid text2">
-            <h2>Alle dine vigtigste data samlet et sted</h2>
-            <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
-                standard
-                fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
-                bog
-                til sammenligning af forskellige skrifttyper.</p>
-            <a href="#" class="btn">Opret bruger</a>
-        </article>
-        <article class="twoGrid_grid img2">
-            <img src="/img/svgs/tasks.svg" loading="lazy">
-        </article>
-    </section>
-</div>
+<section class="container grid-2">
+    <article class="twoGrid_grid img1">
+        <img src="/img/svgs/tasks.svg" loading="lazy">
+    </article>
+    <article class="twoGrid_grid text1">
+        <h2>Alle dine vigtigste data samlet et sted</h2>
+        <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
+            standard
+            fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
+            bog
+            til sammenligning af forskellige skrifttyper.</p>
+        <a href="#" class="btn">Opret bruger</a>
+    </article>
+    <article class="twoGrid_grid text2">
+        <h2>Alle dine vigtigste data samlet et sted</h2>
+        <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
+            standard
+            fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
+            bog
+            til sammenligning af forskellige skrifttyper.</p>
+        <a href="#" class="btn">Opret bruger</a>
+    </article>
+    <article class="twoGrid_grid img2">
+        <img src="/img/svgs/tasks.svg" loading="lazy">
+    </article>
+</section>
+
 
 {{!-- Integrations --}}
 
 <div class="container-eb integrations">
-    <h2 class="circleheader">Integrationer <img src="img/jpgs/circle.jpg" class="headercircle" loading="lazy"></h2>
+    {{>headerh2icon imgsrc="/img/pngs/icons/integration.png" imgalt="integration-icon" title="Integrationer"}}
     <section class="grid-3">
         <article class="integration_grid">
             <img src="/img/pngs/dinero.png" loading="lazy">
@@ -122,65 +115,13 @@
     <a href="#" class="infolink">Se alle 25 integrationer <i class="fas fa-arrow-right"></i></a>
 </div>
 
-{{!-- Happy costumers -- Reviews --}}
 
-<div class="container-eb testimonials">
-    <h2 class="circleheader">Vi har glade kunder <img src="img/jpgs/circle.jpg" class="headercircle" loading="lazy">
-    </h2>
-    <section class="grid-3">
-        <article class="testimonials_grid">
-            <div class="text">
-                <p>“Nyxium har gjort min dagligdag så meget nemmere.
-                    Jeg kan klart anbefale at bruge programmet. ”</p>
-            </div>
-            <div class="img">
-                <img src="img/pngs/mikkel.png" loading="lazy">
-                <div class="right">
-                    <p>Mikkel Lundstrøm</p>
-                    <p>SoMe ekspert</p>
-                </div>
-            </div>
-        </article>
-        <article class="testimonials_grid">
-            <div class="text">
-                <p>“Nyxium har gjort min dagligdag så meget nemmere.
-                    Jeg kan klart anbefale at bruge programmet. ”</p>
-            </div>
-            <div class="img">
-                <img src="img/pngs/mikkel.png" loading="lazy">
-                <div class="right">
-                    <p>Mikkel Lundstrøm</p>
-                    <p>Owner, Beverly</p>
-                </div>
-            </div>
-        </article>
-        <article class="testimonials_grid" loading="lazy">
-            <div class="text">
-                <p>“Nyxium har gjort min dagligdag så meget nemmere.
-                    Jeg kan klart anbefale at bruge programmet. ”</p>
-            </div>
-            <div class="img">
-                <img src="img/pngs/mikkel.png" loading="lazy">
-                <div class="right">
-                    <p>Mikkel Lundstrøm</p>
-                    <p>Owner, Beverly</p>
-                </div>
-            </div>
-        </article>
-    </section>
-</div>
+{{>happycostumers}}
 
 {{!-- Get started with NYXIUM today --}}
 
+{{>getstarted}}
 
-
-<section class="get-started container-eb text-center">
-    <h2 class="circleheader">Kom i gang med at bruge Nyxium i dag <img src="img/jpgs/circle.jpg" class="headercircle"
-            loading="lazy">
-    </h2>
-    <p>Her kan der være plads til en relevant taglinje, der lige skubber kunden det sidste stykker over rampen.</p>
-    <a href="#" class="btn">Opret bruger</a>
-</section>
 
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 {{>footer}}

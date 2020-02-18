@@ -1,14 +1,28 @@
-
+// Necessary
 @import './utils/fonts';
 @import './utils/variables';
 @import './utils/globals';
+
+// Components
+
+// Bigger Components
 @import './utils/header';
+// Smaller Components
+
+
+
+
+
+
 @import './utils/components/cover';
 @import './utils/components/company-connect';
 @import './utils/components/twogrid';
 @import './utils/components/integrations';
 @import './utils/components/testimonials';
+@import './utils/components/headerh2icon';
 @import './utils/footer';
+@import './utils/components/support';
+@import './utils/components/pricegrid';
 
 * {
     font-family: 'Raleway', sans-serif;

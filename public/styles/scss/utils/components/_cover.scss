@@ -84,6 +84,7 @@
     background: url('/img/svgs/front-page-cover.svg');
     background-size: cover;
     background-position: bottom;
+    padding-bottom: 200px;
 }
 
 // Integrationer main cover
@@ -99,6 +100,25 @@
     background-size: cover;
     background-position: bottom;
 }
+// support
+.supCover {
+    background: url('/img/svgs/support-cover.svg');
+    background-size: cover;
+    background-position: bottom;
+    .cover {
+        .cover_content {
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding-bottom: $m150;
+
+            p {
+                max-width: 550px
+            }
+        }
+    }
+}
+
+
 
 .breadcrumbs {
     display: flex;
