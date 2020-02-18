@@ -7,7 +7,7 @@ const dineroIntData = require('../pageData/dinero-int.json')
 
 // Integrationer hovedside
 router.get('/integrationer', (req, res) => {
-    res.render('integrationer', {
+    res.render('integration/integrationer', {
         metaTitle: 'Integrationer',
         metaDescription: 'Integrationer til Nyxium',
         coverBg: 'intCover'
@@ -16,7 +16,7 @@ router.get('/integrationer', (req, res) => {
 
 // Integrationer Dinero side
 router.get('/integrationer/dinero', (req, res) => {
-    res.render('integration-emne', {
+    res.render('integration/integration-category', {
         ...dineroIntData
     })
 })

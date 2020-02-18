@@ -7,7 +7,7 @@ const supportArticles = require('../pageData/support/supportArticles.json')
 
 // Support
 router.get('/support', (req, res) => {
-    res.render('/support/support', {
+    res.render('support/support', {
         ...supportData,
     })
 })

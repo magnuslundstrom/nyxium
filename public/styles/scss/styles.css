@@ -333,120 +333,84 @@ header nav a {
   }
 }
 
-.cover {
-  position: relative;
+.cover_content {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 100px;
 }
 
-.cover .cover_content {
+.cover_content p {
+  color: white;
+}
+
+.cover_content h1 {
+  color: white;
+}
+
+.cover_content-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  max-width: 1300px;
-  margin: 0 auto;
-  justify-items: center;
-  padding: 50px 0px 50px 0px;
 }
 
-.cover .cover_content p, .cover .cover_content h1, .cover .cover_content .Typewriter__wrapper, .cover .cover_content .Typewriter__cursor {
-  color: white;
+.cover_content-grid .left {
+  min-height: 400px;
 }
 
-.cover .cover_content .Typewriter__wrapper, .cover .cover_content .Typewriter__cursor {
-  font-size: 5rem;
-}
-
-.cover .cover_content .left {
-  height: 400px;
-}
-
-.cover .cover_content .right {
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+.cover_content-grid .right {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.cover .cover_content .right img {
+.cover_content-grid img {
   max-height: 300px;
 }
 
-.cover .cover_content .right .e-height {
-  max-height: 400px;
-  margin-bottom: -50px;
+.cover_content-grid .eheight {
+  max-height: 550px;
+  margin-bottom: -100px;
 }
 
 @media (max-width: 1340px) {
-  .cover .cover_content {
+  .cover_content {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
 
 @media (max-width: 900px) {
-  .cover .cover_content {
-    -ms-grid-columns: 3fr 1fr;
-        grid-template-columns: 3fr 1fr;
-  }
-  .cover .cover_content img {
-    height: 250px;
-  }
-}
-
-@media (max-width: 750px) {
-  .cover .cover_content {
+  .cover_content {
+    padding-top: 50px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .cover .cover_content img {
+  .cover_content img {
     display: none;
   }
 }
 
-@media (max-width: 500px) {
-  .top {
-    padding-bottom: 0px;
-  }
+.fph1 span {
+  font-size: 5rem;
+  color: white;
 }
 
-.fpCover {
-  background: url("/img/svgs/front-page-cover.svg");
-  background-size: cover;
-  background-position: bottom;
-  padding-bottom: 200px;
-}
-
-.intCover {
-  background: url("/img/svgs/integrations-red-cover.svg");
-  background-size: cover;
-  background-position: bottom;
-}
-
-.intDineroCover {
-  background: url("/img/svgs/integrationer-dinero.svg");
-  background-size: cover;
-  background-position: bottom;
-}
-
-.supCover {
-  background: url("/img/svgs/support-cover.svg");
-  background-size: cover;
-  background-position: bottom;
-}
-
-.supCover .cover .cover_content {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+.cover_content-nogrid {
   text-align: center;
-  padding-bottom: 150px;
 }
 
-.supCover .cover .cover_content p {
-  max-width: 550px;
+.cover_content-nogrid p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cover_content-nogrid h1 {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .breadcrumbs {
@@ -456,10 +420,12 @@ header nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 30px;
 }
 
 .breadcrumbs a {
   color: white;
+  font-size: 1.6rem;
 }
 
 .breadcrumbs a:hover {
@@ -469,10 +435,11 @@ header nav a {
 
 .breadcrumbs p {
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 .breadcrumbs i {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: white;
   margin-left: 15px;
   margin-right: 15px;

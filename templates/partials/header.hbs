@@ -14,6 +14,9 @@
             background-image: url({{coverbg}});
             background-size: cover;
             background-position: bottom;
+            min-height: 700px;
+            height: 100%;
+            width: 100%;
         }
     </style>
 </head>
@@ -27,12 +30,22 @@
             <nav class="nav">
                 <a href="#">Funktioner</a>
                 <a href="/integrationer">Integrationer</a>
-                <a href="#">Priser</a>
+                <a href="/priser">Priser</a>
                 <a href="#">Support</a>
             </nav>
         </div>
     </header>
 
-    {{> @partial-block}}
-
     <body>
+        {{#if grid}}
+        <section class="cover_content cover_content-grid">
+            {{> @partial-block}}
+        </section>
+        {{else}}
+
+        <section class="cover_content cover_content-nogrid">
+            {{> @partial-block}}
+        </section>
+        {{/if}}
+
+</div>
