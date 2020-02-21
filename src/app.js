@@ -9,7 +9,6 @@ const supportRouter = require('./routes/support')
 const integrationRouter = require('./routes/integrationer')
 
 // Json imports
-//
 
 const app = express()
 
@@ -40,7 +39,7 @@ app.get('', (req, res) => {
     res.render('index', {
         metaTitle: 'Front page title',
         metaDescription: 'Welcome to Nyxium front page',
-        coverBg: 'fpCover'
+
     })
 })
 
@@ -49,7 +48,25 @@ app.get('/priser', (req, res) => {
     res.render('priser', {
         metaTitle: 'Priser',
         metaDescription: 'Lær mere om vores ekstremt gode priser',
-        coverBg: 'prisCover'
+
+    })
+})
+
+// Om
+
+app.get('/om', (req, res) => {
+    res.render('om', {
+        metaTitle: 'Om Nyxium',
+        metaDescription: 'Lær mere om vores ekstremt gode priser',
+    })
+})
+
+// Kontakt
+
+app.get('/kontakt', (req, res) => {
+    res.render('kontakt', {
+        metaTitle: 'Kontakt Nyxium',
+        metaDescription: 'Konkakt os og lær meget mere',
     })
 })
 
