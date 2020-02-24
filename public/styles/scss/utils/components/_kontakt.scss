@@ -1,0 +1,30 @@
+.kontakt {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    article {
+        margin: 0 auto;
+        margin-top: $m100;
+        padding-bottom: $m100;
+        box-shadow: $box-shadow;
+        min-width: 400px;
+        background-color: white;
+        border-radius:25px;
+        
+        img {
+            margin-top: -30px
+        }
+
+        
+
+        p {
+            color: $darkgray;
+            margin-bottom: 1em;
+        }
+        a {
+            display: block;
+            margin-top: $m30;
+            color: $green;
+        }
+    }
+}

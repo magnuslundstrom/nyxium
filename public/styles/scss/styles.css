@@ -333,11 +333,42 @@ header nav a {
   }
 }
 
+.kontakt {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.kontakt article {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-shadow: 0 3px 5px 0px rgba(255, 255, 255, 0.055), 0 3px 5px 0 rgba(14, 30, 37, 0.178);
+          box-shadow: 0 3px 5px 0px rgba(255, 255, 255, 0.055), 0 3px 5px 0 rgba(14, 30, 37, 0.178);
+  min-width: 400px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.kontakt article img {
+  margin-top: -30px;
+}
+
+.kontakt article p {
+  color: #33475B;
+  margin-bottom: 1em;
+}
+
+.kontakt article a {
+  display: block;
+  margin-top: 30px;
+  color: #1BDDAC;
+}
+
 .cover_content {
   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 .cover_content p {
@@ -346,6 +377,7 @@ header nav a {
 
 .cover_content h1 {
   color: white;
+  margin-bottom: 30px;
 }
 
 .cover_content-grid {
@@ -410,7 +442,7 @@ header nav a {
 
 .cover_content-nogrid h1 {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 
 .breadcrumbs {
@@ -443,6 +475,14 @@ header nav a {
   color: white;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.top700 {
+  min-height: 700px;
+}
+
+.top600 {
+  min-height: 600px;
 }
 
 .company-connect {
@@ -784,25 +824,28 @@ footer .column {
           box-shadow: 0 3px 5px 0px rgba(255, 255, 255, 0.055), 0 3px 5px 0 rgba(14, 30, 37, 0.178);
   text-align: left;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .price .price-box .type {
   color: #1BDDAC;
   font-weight: 700;
   font-size: 2rem;
+  margin-bottom: 1em;
 }
 
 .price .price-box .pprice {
   color: #33475B;
   font-weight: 700;
   font-size: 2.8rem;
-  margin-bottom: 0px;
+  margin-bottom: 1em;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
 
 .price .price-box .description {
   color: #C4C4C4;
+  margin-bottom: 1em;
 }
 
 .price .price-box .features {
@@ -813,6 +856,7 @@ footer .column {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1em;
 }
 
 .price .price-box .features img {

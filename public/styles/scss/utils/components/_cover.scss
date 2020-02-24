@@ -2,13 +2,14 @@
     max-width: $mw;
     margin: 0 auto;
     height: 100%;
-    padding-top: 100px;
+    padding-top: 75px;
     
     p {
         color: white;
     }
     h1 {
         color: white;
+        margin-bottom: $m30;
     }
 }
 // If grid = true
@@ -49,8 +50,6 @@
     }
 }
 
-
-
 .fph1 span {
     font-size: 5rem;
     color: white;
@@ -66,7 +65,7 @@
     }
     h1 {
         max-width: 700px;
-        margin: 0 auto;
+        margin: 0 auto $m30 auto;
     }
 }
 
@@ -95,4 +94,12 @@
         margin-right: $m15;
 
     }
+}
+
+.top700 {
+    min-height: 700px;
+}
+
+.top600 {
+    min-height: 600px;
 }
