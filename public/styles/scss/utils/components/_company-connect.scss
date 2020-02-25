@@ -1,15 +1,19 @@
 .company-connect {
     text-align: center;
+    margin-top: $m50;
         .company-connect_grid {
-            margin-top: $m50;
+            display: flex;
+            flex-direction: column;
+            
             img {
-                max-height: 250px;
+                height: 200px;
             }
             .box-gray-text {
                 background-color: $lightgray;
                 padding: $m30 $m15;
                 text-align: left;
                 margin-bottom: $m30;
+                
             }
             .box-gray-img {
                 text-align: right;

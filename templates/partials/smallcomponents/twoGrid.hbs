@@ -1,0 +1,25 @@
+{{!-- With 2 grid reverse text images --}}
+<div class="twoGrid">
+    <section class="container-et-eb grid-2 pb50">
+        <article class="twoGrid_grid img1">
+            <img src="{{firstImage}}" alt="{{firstAlt}}" loading="lazy">
+        </article>
+        <article class="twoGrid_grid text1">
+            <h2>{{firstH2}}</h2>
+            <p>{{firstP}}</p>
+            {{#if btn}}
+            <a href="/opret" class="btn">Opret bruger</a>
+            {{/if}}
+        </article>
+        <article class="twoGrid_grid text2">
+            <h2>{{secondH2}}</h2>
+            <p>{{secondP}}</p>
+            {{#if btn}}
+            <a href="/opret" class="btn">Opret bruger</a>
+            {{/if}}
+        </article>
+        <article class="twoGrid_grid img2">
+            <img src="{{secondImage}}" alt="{{secondImage}}" loading="lazy">
+        </article>
+    </section>
+</div>

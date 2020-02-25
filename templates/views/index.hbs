@@ -17,24 +17,24 @@
 
 {{!-- Connect your company - 3 grids --}}
 
-<div class="container">
+<div class="container-et pb50">
     <h2 class="text-center">Forbind din virksomhed</h2>
 
     <section class="grid-3 company-connect">
         <article class="company-connect_grid">
-            <img src="/img/svgs/selfie.svg" loading="lazy">
+            <img src="/img/svgs/illustrations/connected.svg" loading="lazy">
             <h3>Sammensæt din data</h3>
             <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard
                 fyldtekst siden 1500-tallet</p>
         </article>
         <article class="company-connect_grid">
-            <img src="/img/svgs/selfie.svg" loading="lazy">
+            <img src="/img/svgs/illustrations/online-transactions.svg" loading="lazy">
             <h3>Sammensæt din data</h3>
             <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard
                 fyldtekst siden 1500-tallet</p>
         </article>
         <article class="company-connect_grid">
-            <img src="/img/svgs/selfie.svg" loading="lazy">
+            <img src="/img/svgs/illustrations/responsive.svg" loading="lazy">
             <h3>Sammensæt din data</h3>
             <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
                 standard
@@ -44,40 +44,20 @@
 </div>
 
 
-
 {{!-- With 2 grid reverse text images --}}
-
-<section class="container grid-2">
-    <article class="twoGrid_grid img1">
-        <img src="/img/svgs/tasks.svg" loading="lazy">
-    </article>
-    <article class="twoGrid_grid text1">
-        <h2>Alle dine vigtigste data samlet et sted</h2>
-        <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
-            standard
-            fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
-            bog
-            til sammenligning af forskellige skrifttyper.</p>
-        <a href="#" class="btn">Opret bruger</a>
-    </article>
-    <article class="twoGrid_grid text2">
-        <h2>Alle dine vigtigste data samlet et sted</h2>
-        <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
-            standard
-            fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
-            bog
-            til sammenligning af forskellige skrifttyper.</p>
-        <a href="#" class="btn">Opret bruger</a>
-    </article>
-    <article class="twoGrid_grid img2">
-        <img src="/img/svgs/tasks.svg" loading="lazy">
-    </article>
-</section>
-
+{{>twoGrid
+firstImage="/img/svgs/tasks.svg" alt="james"
+firstH2="Alle dine vigtigste data samlet et sted"
+firstP="Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper."
+secondImage="/img/svgs/tasks.svg" alt="james"
+secondH2="Alle dine vigtigste data samlet et sted"
+secondP="Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper."
+btn=true
+}}
 
 {{!-- Integrations --}}
 
-<div class="container-eb integrations">
+<div class="container-eb pb50 integrations">
     {{>headerh2icon imgsrc="/img/pngs/icons/integration.png" imgalt="integration-icon" title="Integrationer"}}
     <section class="grid-3">
         <article class="integration_grid">

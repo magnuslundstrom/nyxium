@@ -31,11 +31,20 @@
                 }
         }
     }
+}
 
-    .testimonials-pop {
-        transition: opacity 300ms ease-in-out;
-        opacity: 1;
+.testimonials-pop {
+    animation: popup 1s forwards;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
     }
 
-
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
 }

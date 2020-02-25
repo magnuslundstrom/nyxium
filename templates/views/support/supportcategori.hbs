@@ -18,21 +18,15 @@
 
 
     <div class="container-eb support pb50 text-center">
-        <div class="header-icons">
-            <img src="/img/pngs/icons/rocket.png">
-            <img src="/img/pngs/icons/rocket.png">
-        </div>
-        <h2>Vi fandt følgende artikler</h2>
+        {{>headerh2icon title="Hvad søger du hjælp til?" imgsrc="/img/pngs/icons/safetyring.png" alt="faa hjaelp"}}
         <section>
 
 
 
 
-            {{#if articles}}
+
             {{>supportarticle}}
-            {{else}}
-            'James dean!'
-            {{/if}}
+
         </section>
 
 

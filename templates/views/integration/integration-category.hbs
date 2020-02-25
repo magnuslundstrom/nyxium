@@ -13,48 +13,21 @@
 </article>
 {{/header}}
 
-<div class="twoGrid">
 
-    {{!-- With 2 grid reverse text images --}}
-
-    <section class="container-et-eb grid-2 pb50">
-        <article class="twoGrid_grid img1">
-            <img src="/img/svgs/tasks.svg" loading="lazy">
-        </article>
-        <article class="twoGrid_grid text1">
-            <h2>Alle dine vigtigste data samlet et sted</h2>
-            <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
-                standard
-                fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
-                bog
-                til sammenligning af forskellige skrifttyper.</p>
-            <a href="#" class="btn">Opret bruger</a>
-        </article>
-        <article class="twoGrid_grid text2">
-            <h2>Alle dine vigtigste data samlet et sted</h2>
-            <p>Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
-                standard
-                fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en
-                bog
-                til sammenligning af forskellige skrifttyper.</p>
-            <a href="#" class="btn">Opret bruger</a>
-        </article>
-        <article class="twoGrid_grid img2">
-            <img src="/img/svgs/tasks.svg" loading="lazy">
-        </article>
-    </section>
-</div>
+{{!-- With 2 grid reverse text images --}}
+{{>twoGrid
+firstImage="/img/svgs/tasks.svg" alt="james"
+firstH2="Alle dine vigtigste data samlet et sted"
+firstP="Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper."
+secondImage="/img/svgs/tasks.svg" alt="james"
+secondH2="Alle dine vigtigste data samlet et sted"
+secondP="Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper."
+}}
 
 
 {{!-- Get started with NYXIUM today --}}
 
-<section class="get-started container-et-eb text-center">
-    <h2 class="circleheader">Kom i gang med at bruge Nyxium i dag <img src="../img/jpgs/circle.jpg" class="headercircle"
-            loading="lazy">
-    </h2>
-    <p>Her kan der være plads til en relevant taglinje, der lige skubber kunden det sidste stykker over rampen.</p>
-    <a href="#" class="btn">Opret bruger</a>
-</section>
+{{>getstarted}}
 
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 {{>footer}}
