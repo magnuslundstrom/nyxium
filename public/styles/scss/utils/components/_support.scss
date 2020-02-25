@@ -1,21 +1,41 @@
 
 .support {
-    h2 {
-        margin-bottom: $m50;
-    }
+
     .grid-3 {
         .support_grid {
             display:flex;
             flex-direction: column;
             align-items: center;
+
+            .infolink {
+                display: inline-block;
+             margin-top: 0px;
+             font-weight: 700;
+         
+             &:hover i {
+                 color: $darkmain;
+             }
+             i {
+                 padding-left: $m10;
+                 font-size: 1.5rem;
+                 color: $stdlinkcolor;
+             }
+         }
+
             .support_grid-img {
                 height: 150px;
                 width: 150px;
-                background-color: $gray;
+
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            .support_grid-text {
+               h3 {
+                margin-top: 0px;
+               } 
             }
         }
     }
@@ -24,6 +44,10 @@
 // Support articles
 
 .support {
+
+    .headerh2icon {
+        margin-bottom: $m50;
+    }
     .support_article {
         display: flex;
         justify-content: space-between;

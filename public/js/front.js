@@ -8,34 +8,7 @@ const bars = document.querySelector('.bars')
 const frontPageH1 = document.querySelector('.fph1')
 const typeEffect = document.querySelector('.effect')
 
-// Testimonials
-const testimonials = document.querySelector('.testimonials')
-const testimonialGrids = document.querySelectorAll('.testimonials_grid')
 
-
-if (testimonials) {
-    const options = {
-        threshold: 0.3
-    }
-    const testimonialObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-
-            if (entry.isIntersecting) {
-                console.log(entry.isIntersecting)
-                let duration = 400;
-                testimonialGrids.forEach(el => {
-                    setTimeout(() => {
-
-                        el.classList.add('testimonials-pop')
-
-                    }, duration)
-                    duration = duration + 400
-                })
-            }
-        })
-    }, options)
-    testimonialObserver.observe(testimonials)
-}
 // Menu effect
 const navToggle = () => {
     nav.classList.toggle('displaynav')
@@ -64,3 +37,83 @@ if (frontPageH1) {
 
     typescript()
 }
+
+
+// Intersection options
+let options;
+if (window.innerWidth < 801) {
+    options = {
+        threshold: 0.1
+    }
+} else {
+    options = {
+        threshold: 0.9
+    }
+}
+
+// Testimonials animationer
+const testimonials = document.querySelector('.testimonials')
+const testimonialGrids = document.querySelectorAll('.testimonials_grid')
+
+if (testimonials) {
+
+    const testimonialObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                console.log(entry.isIntersecting)
+                let duration = 400;
+                testimonialGrids.forEach(el => {
+                    setTimeout(() => {
+
+                        el.classList.add('testimonials-pop')
+
+                    }, duration)
+                    duration = duration + 400
+                })
+            }
+        })
+    }, options)
+    testimonialObserver.observe(testimonials)
+}
+
+// Get started today Animationer
+
+const getstarted = document.querySelector('.get-started')
+if (getstarted) {
+    const getstartedObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                getstarted.classList.add('get-started-animation')
+            }
+        })
+    }, options)
+    getstartedObserver.observe(getstarted)
+}
+
+// Two Grid img - text Animation
+
+const textOne = document.querySelector('.text1')
+const textTwo = document.querySelector('.text2')
+
+if (textOne && textTwo) {
+    const textOneObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                textOne.classList.add('slide-left')
+            }
+        })
+    }, options)
+    textOneObserver.observe(textOne)
+
+    const textTwoObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                textTwo.classList.add('slide-right')
+            }
+        })
+    }, options)
+    textTwoObserver.observe(textTwo)
+
+}
+

@@ -1,5 +1,5 @@
 footer {
-    background: url('/img/svgs/footer-bg.svg');
+    background-color: $darkgray;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -7,7 +7,7 @@ footer {
     .columns {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: $m150 0px $m100 0px;
+        padding: $m100 0px $m100 0px;
         max-width: $mw;
         margin: 0 auto;
     }
