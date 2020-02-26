@@ -214,6 +214,18 @@ header {
   color: white;
 }
 
+header .logo a {
+  height: 50px;
+}
+
+header .logo a:hover::after {
+  display: none;
+}
+
+header .logo a img {
+  height: 50px;
+}
+
 header .header-wrapper {
   max-width: 1300px;
   margin: 0 auto;
@@ -307,6 +319,8 @@ header nav .submenu .submenubullets {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #33475B;
+  min-width: 200px;
+  border-radius: 15px;
 }
 
 header nav .submenu .submenubullets a {
@@ -677,6 +691,10 @@ header .btn:hover::after {
 
 .twoGrid .grid-2 .text1, .twoGrid .grid-2 .text2 {
   opacity: 0;
+}
+
+.twoGrid .grid-2 img {
+  max-height: 350px;
 }
 
 @media (max-width: 800px) {

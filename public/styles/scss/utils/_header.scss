@@ -3,6 +3,21 @@
 header {
     color: white;
 
+    .logo {
+        a {
+            height: 50px;
+            &:hover {
+                &::after {
+                    display: none;
+                }
+            }
+            img {
+               height: 50px;
+            }
+
+        }
+    }
+
     .header-wrapper {
         max-width: $mw;
         margin: 0 auto;
@@ -12,6 +27,8 @@ header {
         position: relative;
         align-items: center;
 
+
+        // Border below header
         &::after {
             background-color: white;
             content: '';
@@ -23,10 +40,11 @@ header {
         }
     }
 
+    // General A styles
     a {
         color: white;
         position: relative;
-
+    // Border below on hover
         &::after {
             height: 1px;
             width: 100%;
@@ -44,10 +62,14 @@ header {
         }
     }
 
+    // Nav (menu A's)
     nav {
+        // marginleft on A's within the nav
         a {
             margin-left: 30px;
         }
+
+        // P Tags used to trigger the dropdowns
         .dropdowntrigger {
             margin: 0px;
             margin-left: 30px;
@@ -55,12 +77,13 @@ header {
             cursor: context-menu;            
         }
 
+        // The dropdown menu // Containing dropdown trigger aswell
         .submenu {
           display: inline-block;
           position: relative;
           padding-bottom: 10px;
           padding-top: 10px;
-
+        
           &:hover .submenubullets {
               display: flex;              
           }
@@ -71,6 +94,7 @@ header {
               margin-left: $m5;
           }
 
+          // the actual dropdown includes the A's
             .submenubullets {
                 position: absolute;
                 top: calc(1.6rem + 20px);
@@ -81,6 +105,8 @@ header {
                 display: none;
                 flex-direction: column;
                 background-color: $darkgray;
+                min-width: 200px;
+                border-radius: 15px;
 
                 a {
                     display: block;
@@ -144,6 +170,7 @@ header {
                     margin-top: 200px;
                 }
                 .submenu {
+                    
                     padding: 0px;
                     display: flex;
                     flex-direction: column;
@@ -160,6 +187,7 @@ header {
                         margin-left: 15px;
                         padding-top: 10px;
                         padding-bottom: 0px;
+                        
                     }
                 }
             }

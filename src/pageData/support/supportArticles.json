@@ -1,32 +1,12 @@
 {
     "articles": [
         {
-            "articleLink": "/articlelink",
+            "articleLink": "/support/integrationer/hvordan",
             "articleTitle": "Hvordan installerer jeg en integration?"
         },
         {
-            "articleLink": "/articlelink",
-            "articleTitle": "Hvordan installerer jeg en integration?"
-        },
-        {
-            "articleLink": "/articlelink",
-            "articleTitle": "Hvordan installerer jeg en integration?"
-        },
-        {
-            "articleLink": "/articlelink",
-            "articleTitle": "Hvordan installerer jeg en integration?"
-        },
-        {
-            "articleLink": "/articlelink",
-            "articleTitle": "Hvordan installerer jeg en integration?"
-        },
-        {
-            "articleLink": "/articlelink",
-            "articleTitle": "Hvordan installerer jeg en integration?"
-        },
-        {
-            "articleLink": "/articlelink",
-            "articleTitle": "Hvordan installerer jeg en integration?"
+            "articleLink": "/support/integrationer/udvaelg",
+            "articleTitle": "Udvælg dine favorit integrationer"
         }
     ]
 }

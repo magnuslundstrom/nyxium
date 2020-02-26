@@ -5,23 +5,27 @@
 const nav = document.querySelector('nav');
 const burger = document.querySelector('.burger')
 const bars = document.querySelector('.bars')
-const submenu = document.querySelector('.submenu')
-const submenubullets = submenu.querySelector('.submenubullets')
-const dropdowntrigger = submenu.querySelector('.dropdowntrigger')
+const submenu = document.querySelectorAll('.submenu')
 
-// if width
-if (window.innerWidth < 901) {
-    let show = false
-    dropdowntrigger.addEventListener('click', () => {
 
-        if (!show) {
-            submenubullets.style.display = 'flex'
-        } else {
-            submenubullets.style.display = 'none'
-        }
-        show = !show
-    })
-}
+submenu.forEach((el) => {
+    if (window.innerWidth < 901) {
+
+        let show = false
+        const submenubullets = el.querySelector('.submenubullets')
+        const dropdowntrigger = el.querySelector('.dropdowntrigger')
+
+        dropdowntrigger.addEventListener('click', () => {
+
+            if (!show) {
+                submenubullets.style.display = 'flex'
+            } else {
+                submenubullets.style.display = 'none'
+            }
+            show = !show
+        })
+    }
+})
 
 
 // Menu effect

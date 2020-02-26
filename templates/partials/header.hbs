@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{metaTitle}}</title>
-    <meta name="Description" content="Put your description here.">
+    <meta name="Description" content="{{metaDescription}}">
     <script src="https://kit.fontawesome.com/e061cad298.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/scss/styles.css">
 
@@ -20,7 +20,7 @@
 <div class="top {{topHeightClass}}">
     <header>
         <div class="header-wrapper">
-            <div class="logo"><a href="/">Nyxium</a></div>
+            <div class="logo"><a href="/"><img src="/img/nyxium-logo.png"></a></div>
             <div class="burger">
                 <span class="bars"></span>
             </div>
@@ -29,14 +29,19 @@
                 <div class="submenu">
                     <p class="dropdowntrigger">Integrationer <i class="fas fa-chevron-down"></i></p>
                     <div class="submenubullets">
-                        <a href="/integrationer">Integrationer</a>
-                        <a href="/integrationer">Integrationer</a>
-                        <a href="/integrationer">Integrationerewqeweqewqewq</a>
+                        <a href="/integrationer">Alle</a>
+                        <a href="/integrationer/dinero">Dinero</a>
                     </div>
                 </div>
 
                 <a href="/om">Om</a>
-                <a href="/support">Support</a>
+                <div class="submenu">
+                    <p class="dropdowntrigger">Support <i class="fas fa-chevron-down"></i></p>
+                    <div class="submenubullets">
+                        <a href="/support">FAQ</a>
+                        <a href="/support/integrationer">Integrationer</a>
+                    </div>
+                </div>
                 <a href="/login">Login</a>
                 <a href="/opret-bruger" class="btn">Opret bruger</a>
             </nav>

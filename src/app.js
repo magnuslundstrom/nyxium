@@ -37,8 +37,8 @@ app.use(express.static(publicDirPath))
 // Forside
 app.get('', (req, res) => {
     res.render('index', {
-        metaTitle: 'Front page title',
-        metaDescription: 'Welcome to Nyxium front page',
+        metaTitle: 'Velommen til Nyxium',
+        metaDescription: 'Nyxium forbinder al din online data',
 
     })
 })
@@ -46,7 +46,7 @@ app.get('', (req, res) => {
 // Priser
 app.get('/priser', (req, res) => {
     res.render('priser', {
-        metaTitle: 'Priser',
+        metaTitle: 'Se vores priser',
         metaDescription: 'Lær mere om vores ekstremt gode priser',
 
     })
@@ -70,13 +70,14 @@ app.get('/kontakt', (req, res) => {
     })
 })
 
-// test
 
-app.get('/test', (req, res) => {
-    res.render('test', {
-
-    })
-})
+// // 404
+// app.get('/*', (req, res) => {
+//     res.render('404', {
+//         metaTitle: 'Kontakt Nyxium',
+//         metaDescription: 'Konkakt os og lær meget mere',
+//     })
+// })
 
 
 const server = http.createServer(app)
