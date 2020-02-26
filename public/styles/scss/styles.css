@@ -214,16 +214,12 @@ header {
   color: white;
 }
 
-header .logo a {
-  height: 50px;
-}
-
 header .logo a:hover::after {
   display: none;
 }
 
 header .logo a img {
-  height: 50px;
+  height: 35px;
 }
 
 header .header-wrapper {

@@ -71,13 +71,13 @@ app.get('/kontakt', (req, res) => {
 })
 
 
-// // 404
-// app.get('/*', (req, res) => {
-//     res.render('404', {
-//         metaTitle: 'Kontakt Nyxium',
-//         metaDescription: 'Konkakt os og lær meget mere',
-//     })
-// })
+//  404
+app.get('/*', (req, res) => {
+    res.render('404', {
+        metaTitle: 'Kontakt Nyxium',
+        metaDescription: 'Konkakt os og lær meget mere',
+    })
+})
 
 
 const server = http.createServer(app)

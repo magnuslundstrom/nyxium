@@ -5,14 +5,14 @@ header {
 
     .logo {
         a {
-            height: 50px;
+            
             &:hover {
                 &::after {
                     display: none;
                 }
             }
             img {
-               height: 50px;
+               height: 35px;
             }
 
         }
