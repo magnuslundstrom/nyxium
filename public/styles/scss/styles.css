@@ -268,11 +268,60 @@ header nav a {
   margin-left: 30px;
 }
 
-header nav .btn {
+header nav .dropdowntrigger {
+  margin: 0px;
+  margin-left: 30px;
+  color: white;
+  cursor: context-menu;
+}
+
+header nav .submenu {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+header nav .submenu:hover .submenubullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .submenu i {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 5px;
+}
+
+header nav .submenu .submenubullets {
+  position: absolute;
+  top: calc(1.6rem + 20px);
+  z-index: 20000;
+  padding: 30px;
+  padding-left: 0px;
+  margin-left: 30px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #33475B;
+}
+
+header nav .submenu .submenubullets a {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+header .btn {
   margin-top: 0px;
 }
 
-header nav .btn:hover::after {
+header .btn:hover::after {
   display: none;
 }
 
@@ -287,7 +336,7 @@ header nav .btn:hover::after {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header .header-wrapper nav {
     position: fixed;
     bottom: 0px;
@@ -311,14 +360,44 @@ header nav .btn:hover::after {
     -webkit-transition: 300ms ease-in-out;
     transition: 300ms ease-in-out;
   }
-  header .header-wrapper nav a {
+  header .header-wrapper nav a, header .header-wrapper nav p {
     display: block;
     margin-top: 15px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  header .header-wrapper nav a:first-of-type {
+  header .header-wrapper nav > a:first-of-type {
     margin-top: 200px;
+  }
+  header .header-wrapper nav .submenu {
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .header-wrapper nav .submenu:hover .submenubullets {
+    display: none;
+  }
+  header .header-wrapper nav .submenu .submenubullets {
+    position: static;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
   }
   header .header-wrapper .displaynav {
     -webkit-transform: scale(1);
@@ -551,7 +630,8 @@ header nav .btn:hover::after {
 }
 
 .company-connect .company-connect_grid img {
-  height: 200px;
+  height: 150px;
+  width: auto;
 }
 
 .company-connect .company-connect_grid .box-gray-text {
@@ -826,8 +906,8 @@ header nav .btn:hover::after {
 }
 
 .get-started-animation {
-  -webkit-animation: scale-up-center 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-  animation: scale-up-center 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  -webkit-animation: scale-up-center 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  animation: scale-up-center 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
 }
 
 @-webkit-keyframes scale-up-center {

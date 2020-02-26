@@ -12,8 +12,8 @@
 }
 
 .get-started-animation {
-	-webkit-animation: scale-up-center 2s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-            animation: scale-up-center 2s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;  
+	-webkit-animation: scale-up-center 1.6s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+            animation: scale-up-center 1.6s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;  
 }
 
 @-webkit-keyframes scale-up-center {

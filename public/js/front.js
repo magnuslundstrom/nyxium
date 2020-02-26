@@ -5,8 +5,23 @@
 const nav = document.querySelector('nav');
 const burger = document.querySelector('.burger')
 const bars = document.querySelector('.bars')
-const frontPageH1 = document.querySelector('.fph1')
-const typeEffect = document.querySelector('.effect')
+const submenu = document.querySelector('.submenu')
+const submenubullets = submenu.querySelector('.submenubullets')
+const dropdowntrigger = submenu.querySelector('.dropdowntrigger')
+
+// if width
+if (window.innerWidth < 901) {
+    let show = false
+    dropdowntrigger.addEventListener('click', () => {
+
+        if (!show) {
+            submenubullets.style.display = 'flex'
+        } else {
+            submenubullets.style.display = 'none'
+        }
+        show = !show
+    })
+}
 
 
 // Menu effect
@@ -14,29 +29,19 @@ const navToggle = () => {
     nav.classList.toggle('displaynav')
     bars.classList.toggle('cross')
 }
+
+
 burger.addEventListener('click', navToggle)
 
 
-if (frontPageH1) {
-    // Frontpage Typeeffect
-    const typescript = () => {
-        var typewriter = new Typewriter(typeEffect, {
-            loop: true
-        });
 
-        typewriter.typeString('salg')
-            .pauseFor(2000)
-            .deleteChars(4)
-            .typeString('indkøb')
-            .pauseFor(2000)
-            .deleteChars(6)
-            .typeString('din virksomhed')
-            .pauseFor(2000)
-            .start();
-    }
 
-    typescript()
-}
+
+
+
+
+
+
 
 
 // Intersection options
@@ -114,6 +119,29 @@ if (textOne && textTwo) {
         })
     }, options)
     textTwoObserver.observe(textTwo)
-
 }
+
+// Frontpage Typeeffect
+const frontPageH1 = document.querySelector('.fph1')
+const typeEffect = document.querySelector('.effect')
+
+if (frontPageH1) {
+    const typescript = () => {
+        var typewriter = new Typewriter(typeEffect, {
+            loop: true
+        });
+
+        typewriter.typeString('salg')
+            .pauseFor(2000)
+            .deleteChars(4)
+            .typeString('indkøb')
+            .pauseFor(2000)
+            .deleteChars(6)
+            .typeString('din virksomhed')
+            .pauseFor(2000)
+            .start();
+    }
+    typescript()
+}
+
 

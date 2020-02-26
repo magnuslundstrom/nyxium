@@ -37,9 +37,7 @@ header {
         }
         &:hover {
             color: white;
-
             &::after {
-                
                 content: '';
                 transform: scale(1);
             }
@@ -50,6 +48,50 @@ header {
         a {
             margin-left: 30px;
         }
+        .dropdowntrigger {
+            margin: 0px;
+            margin-left: 30px;
+            color: white;
+            cursor: context-menu;            
+        }
+
+        .submenu {
+          display: inline-block;
+          position: relative;
+          padding-bottom: 10px;
+          padding-top: 10px;
+
+          &:hover .submenubullets {
+              display: flex;              
+          }
+
+          i {
+              color: white;
+              font-size: 1.4rem;
+              margin-left: $m5;
+          }
+
+            .submenubullets {
+                position: absolute;
+                top: calc(1.6rem + 20px);
+                z-index: 20000;
+                padding: 30px;
+                padding-left: 0px;
+                margin-left: 30px;
+                display: none;
+                flex-direction: column;
+                background-color: $darkgray;
+
+                a {
+                    display: block;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    align-self: flex-start;
+                    }
+
+                }
+            }
+        }
         .btn {
             margin-top: 0px;
             &:hover {
@@ -59,7 +101,7 @@ header {
             }
         }
     }
-}
+
 
 @media(max-width:1340px) {
     header {
@@ -75,7 +117,7 @@ header {
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 900px) {
     header {
         .header-wrapper {
             nav {
@@ -92,13 +134,33 @@ header {
                 transform: scale(0,1);
                 transform-origin: right;
                 transition: 300ms ease-in-out;
-                a {
+                a, p {
                     display: block;
                     margin-top: $m15;
                     align-self: flex-start;
                 }
-                a:first-of-type {
+
+                 > a:first-of-type {
                     margin-top: 200px;
+                }
+                .submenu {
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    &:hover .submenubullets {
+                        display: none;          
+                    }
+
+                    .submenubullets {
+                        position: static;
+                        display: none;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-left: 15px;
+                        padding-top: 10px;
+                        padding-bottom: 0px;
+                    }
                 }
             }
 
