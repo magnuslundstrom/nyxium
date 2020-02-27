@@ -70,6 +70,10 @@ app.get('/kontakt', (req, res) => {
     })
 })
 
+// Robots.txt
+app.get('/robots.txt', (req, res) => {
+    res.sendFile(path.join(__dirname, '../robots.txt'))
+})
 
 //  404
 app.get('/*', (req, res) => {
