@@ -1,6 +1,5 @@
 const path = require('path')
 const http = require('http')
-const reload = require('reload')
 const express = require('express')
 const hbs = require('hbs')
 
@@ -86,4 +85,3 @@ app.get('/*', (req, res) => {
 
 const server = http.createServer(app)
 server.listen(port, () => console.log('server started!'))
-reload(app) 
