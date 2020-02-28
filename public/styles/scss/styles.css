@@ -219,7 +219,7 @@ header .logo a:hover::after {
 }
 
 header .logo a img {
-  height: 35px;
+  height: 45px;
 }
 
 header .header-wrapper {
@@ -238,18 +238,8 @@ header .header-wrapper {
           align-items: center;
 }
 
-header .header-wrapper::after {
-  background-color: white;
-  content: '';
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-
 header a {
-  color: white;
+  color: #33475B;
   position: relative;
 }
 
@@ -259,11 +249,11 @@ header a::after {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background-color: white;
+  background-color: #33475B;
 }
 
 header a:hover {
-  color: white;
+  color: #33475B;
 }
 
 header a:hover::after {
@@ -279,7 +269,7 @@ header nav a {
 header nav .dropdowntrigger {
   margin: 0px;
   margin-left: 30px;
-  color: white;
+  color: #33475B;
   cursor: context-menu;
 }
 
@@ -297,7 +287,7 @@ header nav .submenu:hover .submenubullets {
 }
 
 header nav .submenu i {
-  color: white;
+  color: #33475B;
   font-size: 1.4rem;
   margin-left: 5px;
 }
@@ -325,6 +315,7 @@ header nav .submenu .submenubullets a {
   margin-bottom: 5px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  color: white;
 }
 
 header .btn {
@@ -353,7 +344,7 @@ header .btn:hover::after {
     background-color: #33475B;
     height: 100vh;
     right: 0px;
-    width: 66%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -375,6 +366,10 @@ header .btn:hover::after {
     margin-top: 15px;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    color: white;
+  }
+  header .header-wrapper nav .btn {
+    margin-top: 30px;
   }
   header .header-wrapper nav > a:first-of-type {
     margin-top: 200px;
@@ -441,7 +436,7 @@ header .btn:hover::after {
     right: 3px;
     content: '';
     position: absolute;
-    background-color: white;
+    background-color: #33475B;
     -webkit-transition: 300ms ease-in-out;
     transition: 300ms ease-in-out;
   }
@@ -617,11 +612,11 @@ header .btn:hover::after {
 }
 
 .top700 {
-  min-height: 700px;
+  min-height: 650px;
 }
 
 .top600 {
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .company-connect {
@@ -690,7 +685,7 @@ header .btn:hover::after {
 }
 
 .twoGrid .grid-2 img {
-  max-height: 350px;
+  max-height: 300px;
 }
 
 @media (max-width: 800px) {

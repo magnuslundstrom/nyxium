@@ -12,7 +12,7 @@ header {
                 }
             }
             img {
-               height: 35px;
+               height: 45px;
             }
 
         }
@@ -28,21 +28,12 @@ header {
         align-items: center;
 
 
-        // Border below header
-        &::after {
-            background-color: white;
-            content: '';
-            height: 1px;
-            width: 100%;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-        }
+ 
     }
 
     // General A styles
     a {
-        color: white;
+        color: $darkgray;
         position: relative;
     // Border below on hover
         &::after {
@@ -51,10 +42,10 @@ header {
             position: absolute;
             bottom: 0px;
             left: 0px;
-            background-color: white;
+            background-color: $darkgray;
         }
         &:hover {
-            color: white;
+            color: $darkgray;
             &::after {
                 content: '';
                 transform: scale(1);
@@ -73,7 +64,7 @@ header {
         .dropdowntrigger {
             margin: 0px;
             margin-left: 30px;
-            color: white;
+            color: $darkgray;
             cursor: context-menu;            
         }
 
@@ -89,7 +80,7 @@ header {
           }
 
           i {
-              color: white;
+              color: $darkgray;
               font-size: 1.4rem;
               margin-left: $m5;
           }
@@ -113,6 +104,7 @@ header {
                     margin-top: 5px;
                     margin-bottom: 5px;
                     align-self: flex-start;
+                    color: white;
                     }
 
                 }
@@ -152,7 +144,7 @@ header {
                 background-color: $darkgray;
                 height: 100vh;
                 right: 0px;
-                width: 66%;
+                width: 80%;
                 display: flex;
                 z-index: 1;
                 padding-left: $m50;
@@ -164,6 +156,10 @@ header {
                     display: block;
                     margin-top: $m15;
                     align-self: flex-start;
+                    color: white;
+                }
+                .btn {
+                    margin-top: 30px;
                 }
 
                  > a:first-of-type {
@@ -224,7 +220,7 @@ header {
               right: 3px;
               content: '';
               position: absolute;
-              background-color: white;
+              background-color: $darkgray;
               transition: 300ms ease-in-out;
           }
       }
