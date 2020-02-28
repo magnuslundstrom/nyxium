@@ -12,8 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.0",
-    "reload": "^3.0.4"
+    "hbs": "^4.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

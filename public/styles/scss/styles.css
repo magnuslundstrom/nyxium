@@ -318,6 +318,10 @@ header nav .submenu .submenubullets a {
   color: white;
 }
 
+header nav .submenu .submenubullets a:hover {
+  border-bottom: 1px solid white;
+}
+
 header .btn {
   margin-top: 0px;
 }
